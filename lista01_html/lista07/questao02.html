@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Acadêmica</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            border: 1px solid #000;
+            padding: 15px;
+        }
+        .header {
+            background-color: #d4aa00;
+            color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+        }
+        .inline {
+            display: inline;
+            margin-right: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">SISTEMA DE GESTÃO ACADÊMICA</div>
+        <h3>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+        <form>
+            <label>Login</label>
+            <input type="text">
+            
+            <label>Senha</label>
+            <input type="password">
+            
+            <label>Status</label>
+            <select>
+                <option>Inativo</option>
+                <option>Ativo</option>
+            </select>
+            
+            <label>Tipo</label>
+            <input type="radio" name="tipo" class="inline"> Técnico
+            <input type="radio" name="tipo" class="inline"> Professor
+            <input type="radio" name="tipo" class="inline"> Aluno
+            
+            <label>Data Criação</label>
+            <input type="text">
+            
+            <label>Perfil</label>
+            <input type="radio" name="perfil" class="inline"> Convidado
+            <input type="radio" name="perfil" class="inline"> Administrador
+            
+            <label>Observações</label>
+            <textarea rows="4"></textarea>
+            
+            <label>Módulos</label>
+            <input type="checkbox" class="inline"> Compras
+            <input type="checkbox" class="inline"> Biblioteca
+            <input type="checkbox" class="inline"> Acadêmico
+            <input type="checkbox" class="inline"> Documentação
+            <input type="checkbox" class="inline"> Recursos Humanos
+            
+            <div class="buttons">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

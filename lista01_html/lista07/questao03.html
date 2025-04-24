@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6ffe6;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            border: 2px solid green;
+            padding: 10px;
+            background-color: #f0fff0;
+            position: relative;
+        }
+        .header {
+            background-color: lightgreen;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid green;
+        }
+        fieldset {
+            border: 1px solid green;
+            margin-bottom: 10px;
+        }
+
+        form .containerMenu{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .containerMenu .dados, .localizacao{
+            width: 100%;
+        }
+
+
+        legend {
+            font-weight: bold;
+            color: green;
+        }
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .inline {
+            display: inline;
+            margin-right: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .image-bg {
+            position: absolute;
+            opacity: 0.3;
+            width: 100px;
+            height: auto;
+        }
+        .image1 { top: 10px; left: 10px; }
+        .image2 { top: 40px; right: 10px; }
+        .image3 { bottom: 90px; right: 10px; }
+        .image4 { bottom: 10px; left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Cadastro Geral</div>
+        <form>
+            <div class="containerMenu">
+                <fieldset class="dados">
+                    <legend>Dados pessoais</legend>
+                    <label>Nome completo:</label>
+                    <input type="text">
+                    <label>Profissão:</label>
+                    <select>
+                        <option>Sua profissão</option>
+                    </select>
+                </fieldset>
+                <fieldset class="localizacao">
+                    <legend>Localização</legend>
+                    <label>E-mail:</label>
+                    <input type="email">
+                    <label>Rua:</label>
+                    <input type="text">
+                </fieldset>
+            </div>
+            
+            <fieldset>
+                <legend>Faixa etária</legend>
+                <input type="radio" name="faixa" class="inline"> até 20 anos
+                <input type="radio" name="faixa" class="inline"> mais de 20 até 30 anos
+                <input type="radio" name="faixa" class="inline"> mais de 30 até 40 anos
+                <input type="radio" name="faixa" class="inline"> mais de 40 até 50 anos
+                <input type="radio" name="faixa" class="inline"> mais de 50 até 60 anos
+                <input type="radio" name="faixa" class="inline"> mais de 60
+            </fieldset>
+            <fieldset class="esporte">
+                <legend>Esportes que pratica</legend>
+                <input type="checkbox" class="inline"> Futebol de campo
+                <br>
+                <input type="checkbox" class="inline"> Futebol de salão
+                <br>
+                <input type="checkbox" class="inline"> Futebol society
+                <br>
+                <input type="checkbox" class="inline"> Volley de quadra
+                <br>
+                <input type="checkbox" class="inline"> Volley de praia
+                <br>
+                <input type="checkbox" class="inline"> Natação em piscina
+                <br>
+                <input type="checkbox" class="inline"> Natação em mar aberto
+            </fieldset>
+            <fieldset>
+                <legend>Comentário</legend>
+                <label>Mensagem:</label>
+                <textarea rows="4"></textarea>
+            </fieldset>
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+        <img src="icon1.png" class="image-bg image1">
+        <img src="icon2.png" class="image-bg image2">
+        <img src="icon3.png" class="image-bg image3">
+        <img src="icon4.png" class="image-bg image4">
+    </div>
+</body>
+</html>

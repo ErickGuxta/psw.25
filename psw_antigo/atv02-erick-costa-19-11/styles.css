@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&family=League+Spartan:wght@100..900&familyOswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "League Spartan", serif;
+    
+}
+
+
+body{
+    background-color: #002B2B;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    background-color: #002B2B;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    padding: 10px;
+    color: #7EBFA1;
+    font-size: 25px;
+    letter-spacing: -4px;
+}
+
+.logo h1{
+    text-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+}
+
+.logo h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+
+.navbar ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar ul li a{
+    color: #AD872F;
+}
+
+.navbar ul li a:hover{
+    color:#D9B573
+}
+
+.botao-entrar{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1bbe72;
+    border-radius: 25px;
+}
+.botao-entrar li a{
+    color: #0D0D0D;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 4px;
+}
+
+.botao-entrar:hover{
+    background-color: #349668;
+    transform: scale(1.1);
+}
+
+
+/* CONTEUDO PRINCIPAL */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.conteudo{
+    width: 75%;
+    height: 100%;
+    padding: 45px;
+    margin-left: 30px;
+    
+    background-color: #005252;
+    color: #D9B573;
+    font-size: 20px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+    
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #1bbe72;
+    text-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+    margin-bottom: 25px;
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+
+.grupo{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.item-grupo {
+    margin-bottom: 25px;
+}
+.grupo-botoes{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"], 
+input[type="date"], 
+input[type="time"],
+input[type="month"],
+input[type="week"], 
+input[type="datetime-local"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #7EBFA1;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #7EBFA1;
+}
+
+input::placeholder {
+    color: #7EBFA1; 
+    opacity: 1; 
+}
+
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px 0;
+}
+
+input[type="color"] {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 4px;
+    border: none;
+    background-color: #002B2B;
+}
+
+input[type="range"] {
+    width: 100%;
+    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+    background-color: #7EBFA1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    background-color: #F27979;
+}
+
+input[type="button"] {
+    background-color: #295073;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+
+/* IMAGEM MAIN */
+.imagem{
+    height: auto;
+    width: 25%;
+}
+.imagem img{
+    width: 100%;
+    filter: drop-shadow(10px 0 30px #7EBFA1);
+    animation: flutuar 8s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+
+/* RESPONSIVIDADE */
+
+/* Computador */
+@media only screen and (max-width: 1200px) {
+    .navbar ul {
+        gap: 40px;
+    }
+    
+    .conteudo {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    .navbar ul {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .grupo {
+        flex-direction: column;
+    }
+
+    .item-grupo {
+        width: 100%;
+    }
+}
+
+/* Celular */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .botao-entrar {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    main {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .conteudo {
+        width: 80%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .imagem {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .botao-entrar {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    main {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .conteudo {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .imagem {
+        display: none;
+    }
+}
+
+/* Celulares menores */
+@media only screen and (max-width: 576px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .conteudo {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .grupo-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+

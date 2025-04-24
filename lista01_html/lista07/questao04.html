@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Associado</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        .header {
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .sub-header {
+            background-color: lightblue;
+            color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+        }
+        .inline {
+            display: inline;
+            margin-right: 10px;
+        }
+        .checkbox-container {
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-header">Não é associado? Faça seu cadastro</div>
+        <form>
+            <label>Nome</label>
+            <input type="text">
+            <label>Nome Completo</label>
+            <input type="text">
+            <label>CPF</label>
+            <input type="text">
+            <label>E-mail</label>
+            <input type="email">
+            <label>WebSite</label>
+            <input type="text">
+            <label>Endereço</label>
+            <input type="text">
+            <label>Bairro</label>
+            <input type="text">
+            <label>Cidade</label>
+            <input type="text">
+            <label>CEP</label>
+            <input type="text">
+            <label>UF</label>
+            <select>
+                <option>BA</option>
+            </select>
+            <label>Telefone</label>
+            <input type="text">
+            <label>Fax</label>
+            <input type="text">
+            <label>Data Nascimento</label>
+            <input type="text">
+            <label>Sexo</label>
+            <input type="radio" name="sexo" class="inline"> M
+            <input type="radio" name="sexo" class="inline"> F
+            <label>Celular</label>
+            <input type="text">
+            <label>Est.Civil</label>
+            <select>
+                <option>Solteiro</option>
+            </select>
+            <label>Login</label>
+            <input type="text">
+            <label>Senha</label>
+            <input type="password">
+            
+            <div class="checkbox-container">
+                <label>Deseja receber informações sobre os seguintes assuntos abaixo:</label>
+                <input type="checkbox" class="inline"> Tecnologia
+                <input type="checkbox" class="inline"> Esportes
+                <input type="checkbox" class="inline"> Automóveis
+                <input type="checkbox" class="inline"> Culinária
+                <input type="checkbox" class="inline"> Política
+                <input type="checkbox" class="inline"> Policial
+                <input type="checkbox" class="inline"> Tempo
+                <input type="checkbox" class="inline"> Cultura
+                <input type="checkbox" class="inline"> Economia
+                <input type="checkbox" class="inline"> Jogos
+                <input type="checkbox" class="inline"> Educação
+                <input type="checkbox" class="inline"> Viagem
+                <input type="checkbox" class="inline"> Empregos
+                <input type="checkbox" class="inline"> Moda e Estilo
+            </div>
+            <br>
+            <input type="checkbox"> Li as regras de cadastro e autorizo a criação do usuário
+            
+            <div class="buttons">
+                <button type="submit">Confirmar</button>
+                <button type="reset">Retornar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

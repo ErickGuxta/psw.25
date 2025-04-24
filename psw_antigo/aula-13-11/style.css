@@ -1,0 +1,126 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+
+}
+
+#div1{
+    background-color: aquamarine;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#div2{
+    background-color: rgb(165, 127, 255);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#div3{
+    background-color: rgb(151, 255, 81);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.meio{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+
+#div4{
+    background-color: rgb(230, 125, 125);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div5{
+    background-color: blueviolet;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.rodape{
+    background-color: rgb(255, 232, 103);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+#div6{
+    background-color: coral;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div7{
+    background-color: rgb(150, 106, 90);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div8{
+    background-color: rgb(110, 168, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div9{
+    background-color: rgb(255, 132, 87);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 15px 0;
+    background-color: #333;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navegacao a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}

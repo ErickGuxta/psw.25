@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Página inicial */
+main {
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-link {
+  background-color: plum;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button-link:hover {
+  background-color: #d56de8;
+  transform: scale(1.05);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: plum;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  background-color: plum;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: auto;
+  color: black;
+}
+
+/* Formulário */
+.container {
+  background-color: plum;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: plum;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  background-color: plum;
+  color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #6a1b9a;
+  color: white;
+}
+
+td {
+  background-color: #f3e5f5;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.cadastroDiv {
+  background-color: #ffcccb; 
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.disciplinas-container, .favoritas-container {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.disciplinas-container label, 
+.favoritas-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.disciplinas-container input[type="checkbox"], 
+.favoritas-container input[type="checkbox"] {
+  margin-right: 5px; 
+}

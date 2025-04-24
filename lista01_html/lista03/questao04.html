@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4 - Layout com Tabela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: top;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+        
+        .menu p {
+            margin: 10px 0;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .menu a:hover {
+            color: #0066cc;
+        }
+        
+        .header {
+            background-color: #f2f2f2;
+        }
+        
+        .menu {
+            width: 20%;
+            background-color: #f9f9f9;
+        }
+        
+        .content p {
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background-color: #f2f2f2;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>The Beatles</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu">
+                <h3>Menu</h3>
+                <p>→ <a href="#">Principal</a></p>
+                <p>→ <a href="#">Sobre</a></p>
+                <p>→ <a href="#">Discografia</a></p>
+                <p>→ <a href="#">Curiosidades</a></p>
+                <p>→ <a href="#">Contato</a></p>
+            </td>
+            <td class="content">
+                <h2>O fim dos Beatles, há 45 anos, terminou com quase todos os sonhos</h2>
+                <p>Por mais que o mundo inteiro suspeitasse, ninguém queria admitir, e muito menos ouvir e ler os jornais daquele dia 10 de abril de 1970 cinzento e meio gelado. Paul McCartney estava deixando os Beatles, ao mesmo tempo em que lançava seu primeiro álbum solo.</p>
+                <p>A falta de atividades da banda desde o lançamento de "Abbey Road'', no final do ano anterior, já lançava dúvidas a respeito da continuidade da banda, já que eram fortes os rumores de desentendimentos entre os músicos, assim como Paul não escondia de amigos e não tão amigos sua contrariedade com o gerenciamento dos negócios do grupo pelo empresário Allen Klein.</p>
+                <p>Pode não ter sido uma grande surpresa, daquelas monstruosas, mas foi chocante, e atordoante, segundo os jornais da época. todo mundo sabia: era o fim dos Beatles, embora ninguém admitisse naquele dia e nas semanas seguintes. John Lennon ficou furioso, pois ele já havia decretado…</p>
+                <p>Fonte: <a href="http://combaterock.blogosfera.uol.com.br/2015/04/10/o-fim-dos-beatles-ha-45-anos-terminou-com-quase-todos-os-sonhos/">http://combaterock.blogosfera.uol.com.br/2015/04/10/o-fim-dos-beatles-ha-45-anos-terminou-com-quase-todos-os-sonhos/</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <p>&copy; Todos os direitos reservados.</p>
+                <p>Aluno: Erick Gustavo Costa</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

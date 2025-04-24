@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&family=League+Spartan:wght@100..900&familyOswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "League Spartan", serif;
+
+}
+
+body {
+    margin: 0;
+    background-color: #1f2428;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 80px;
+}
+
+
+h1 {
+    color: #1bbe72;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+
+}
+
+
+.sessao-direita-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+.caixa1 {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.imgs-logo img {
+    width: 25px;
+}
+
+.caixa2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa2 img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/* sessão geral conteudo principal pagina */
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75%;
+}
+
+/* menu lateral da pagina */
+aside {
+    font-size: 18px;
+    margin-top: 35px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 10px 30px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+aside nav div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    span img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .nav-item a {
+        color: white;
+    }
+
+    .nav-item a:hover {
+        color: #D9B573;
+    }
+
+
+}
+
+
+/* FORMULARIO */
+main {
+    width: 80%;
+    margin-top: 35px;
+}
+
+.conteudo {
+    padding: 25px 40px 25px 25px;
+    width: 95%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+    color: #D9B573;
+}
+
+.titulo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1bbe72;
+
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.grupo-teste {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.item-grupo {
+    margin-bottom: 25px;
+}
+
+.item-grupo-tel-cpf {
+    margin-bottom: 25px;
+    width: 40%;
+}
+
+/* area dos checkbox */
+.sub-itens {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    label {
+        color: #949494;
+    }
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #7EBFA1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #949494;
+}
+
+input::placeholder {
+    color: #949494;
+    opacity: 1;
+}
+
+.botao-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1p solid rebeccapurple;
+}
+
+button {
+    margin-top: 25px;
+    padding: 8px;
+    width: 200px;
+    height: 35px;
+
+    border-style: none;
+    border: 1px solid #7EBFA1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #1bbe72;
+
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+button:hover {
+    border: 1px solid rgb(255, 154, 154);
+    background-color: rgb(255, 154, 154);
+    color: #1f2428;
+}
+
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    color: #D9B573;
+}
+
+
+
+/* STYLE PARA LISTA ALUNO */
+
+.conteudo-listaaluno {
+    width: 95%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.3);
+    color: #D9B573;
+
+}
+
+.tabela-informacoes {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.tabela-informacoes th {
+    border: 1px solid #7EBFA1;
+    padding: 12px;
+    color: #D9B573;
+}
+
+.tabela-informacoes td {
+    border: 1px solid #7EBFA1;
+    padding: 12px;
+    color: #D9B573;
+    font-size: 12;
+    word-wrap: break-word; 
+    max-width: 150px;
+}
+
+.tabela-informacoes th {
+    background-color: #1bbe72;
+    color: #1f2428;
+    font-weight: bold;
+}
+
+.tabela-informacoes tr {
+    background-color: #2a2f33;
+}
+
+.tabela-informacoes tr:hover {
+    background-color: #1bbe72;
+    color: #1f2428;
+}
+
+.botao-limpar-registros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLE PARA HOME */
+
+#header-home {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+#conteudo-principal {
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.parte1 {
+    width: 70%;
+    height: 100%;
+    margin-top: 35px;
+    padding: 15px 40px 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.parte1 p{
+    font-size: 20px;
+}
+.parte1 strong{
+    color: #1bbe72;
+}
+
+.parte2 {
+    width: 30%;
+    height: 100%;
+    margin-top: 35px;
+    display: flex;
+    align-items: center
+}
+
+.parte2 img {
+    width: 100%;
+    filter: drop-shadow(10px 0 30px #7EBFA1);
+    animation: flutuar 8s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorchid;
+}
+
+main{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2{
+    padding: 10px;
+    text-align: center;
+}
+
+div{
+    margin: 20px;
+    padding: 20px;
+}
+
+.content-1{
+    color: chocolate;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.content-2{
+    color: rgb(0, 29, 107);
+    border: 2px solid rgb(180, 0, 0);
+    border-radius: 15px;
+}
+
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.card-1, .card-2, .card-3{
+    border: 2px solid rgb(30, 180, 0);
+    border-radius: 15px;
+    width: 25%;
+
+    & img{
+        width: 100%;
+    }
+}
+
+/* tabela */
+
+#customers {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+  
+#customers td{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 8px;
+}
+#customers th {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#customers tr:hover {background-color: #496feb;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: #496feb;
+}
+
+button a{
+    color: black;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+button img{
+    width: 25px;
+}
+
+button:hover{
+    background-color: #859ff1;
+}
