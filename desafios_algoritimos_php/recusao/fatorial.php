@@ -15,7 +15,7 @@ echo fatorial(5);
 
 function fatorial_recursao($x)
 {   
-    if ($x == 1) return 1;
+    if ($x == 1 || $x == 0) return 1;
     else return $x * fatorial_recursao($x -1);
 }
 
