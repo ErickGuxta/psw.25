@@ -22,8 +22,9 @@ class ClientePessoaFisica extends Cliente
     private string $nome;
     private int $cpf;
     
-    function __construct(string $nome, int $cpf)
+    function __construct(string $nome, int $cpf, string $logradouro, string $bairro)
     {
+        parent::__construct($logradouro, $bairro);
         $this->nome = $nome;
         $this->cpf = $cpf;
     }
@@ -45,8 +46,9 @@ class ClientePessoaJurida extends Cliente
     private int $cnpj;
     private string $nomeEmpresa;
 
-    function __construct(int $cnpj, string $nomeEmpresa)
+    function __construct(int $cnpj, string $nomeEmpresa, string $logradouro, string $bairro)
     {
+        parent::__construct($logradouro, $bairro);
         $this->cnpj = $cnpj;
         $this->nomeEmpresa = $nomeEmpresa;
     }
@@ -66,8 +68,8 @@ class ClientePessoaJurida extends Cliente
 
 $cliente = new Cliente("Dom Bosco","São Francisco");
 
-$clientePF = new ClientePessoaFisica("João Silva", 12345678900);
-$clientePJ = new ClientePessoaJurida(12345678901234, "Empresa XYZ");
+$clientePF = new ClientePessoaFisica("João Silva", 12345678900, "Dom Bosco", "São Francisco");
+$clientePJ = new ClientePessoaJurida(12345678901234, "Empresa XYZ", "Dom Bosco", "São Francisco");
 
 // Exibindo informações
 echo $clientePF->verInfomacaoUsuario() . "\n";
